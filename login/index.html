@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form id="myForm" onsubmit="validateForm(event)">
+        <div class="form-group">
+          <label for="email">Username</label>
+          <input
+            type="text"
+            id="email"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+          <span id="emailError" class="error"></span>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <span id="passwordError" class="error"></span>
+        </div>
+        <!--<input type="checkbox" onclick="ShowPassword()" /> Show Password-->
+
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
